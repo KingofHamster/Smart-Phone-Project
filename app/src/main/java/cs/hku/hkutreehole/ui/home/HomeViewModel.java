@@ -4,16 +4,25 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import java.util.Date;
+
 public class HomeViewModel extends ViewModel {
 
-    private final MutableLiveData<String> mText;
-
+    private MutableLiveData<String> mText;
+    private Date now;
     public HomeViewModel() {
+        String time = "现在是什么时间？";
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue( time );
     }
 
     public LiveData<String> getText() {
         return mText;
     }
+
+    public String getDate() {
+        now = new Date();
+        return now.toString();
+    }
+
 }
