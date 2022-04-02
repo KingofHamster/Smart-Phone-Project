@@ -6,20 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -29,33 +15,47 @@
 
         <TextView
             android:id="@+id/emailAdressTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/login" />
+            android:layout_width="91dp"
+            android:layout_height="46dp"
+            android:text="@string/login"
+            android:layout_gravity="center"/>
 
         <EditText
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="HKU Email Adress"
+            android:hint="@string/email_hint"
             android:inputType="textEmailAddress"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textColorHint="#757575"
+            android:layout_gravity="center"/>
 
         <EditText
             android:id="@+id/editTextTextPassword"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:ems="10"
-            android:hint="Verification Code"
-            android:inputType="textPassword" />
+            android:hint="@string/verification_hint"
+            android:inputType="textPassword"
+            android:textColorHint="#757575" />
 
         <Button
             android:id="@+id/buttonGetVerificationCode"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Get Code"
-            android:visibility="visible" />
+            android:backgroundTintMode="screen"
+            android:text="@string/get_code"
+            android:visibility="visible"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:layout_gravity="center"/>
 
     </LinearLayout>
 

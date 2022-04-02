@@ -10,4 +10,6 @@
     <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
     <string name="login">Login</string>
     <string name="get_code">Get Code</string>
+    <string name="email_hint">HKU Email Address</string>
+    <string name="verification_hint">Please Input Verification Code</string>
 </resources>

@@ -24,10 +24,8 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
-        final TextView textView = root.findViewById(R.id.text_home);
         final TextView textView2 = root.findViewById(R.id.emailAdressTextView);
         final Button button = root.findViewById(R.id.buttonGetVerificationCode);
-        textView.setText("这是首页页面");
         textView2.setText("这是首页页面");
         button.setOnClickListener(new View.OnClickListener() {
             @Override
