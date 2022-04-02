@@ -22,6 +22,10 @@ Tang Shaowei
   - Email service for sending verification code to HKU Email
 - Me Page
   - Support personal data representation and editing
+- Tecent OS as server if necessary
+  - http://175.178.42.68:12345/workshop8.php for demo, more function to be added if necessary
+  - http://175.178.42.68:888/phpmyadmin_18787ffdd094dd55 for database administration
+
 
 ## Timeline
 - 01/04/2022 - 07/04/2022: First Stage Development
