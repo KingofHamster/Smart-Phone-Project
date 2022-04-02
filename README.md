@@ -15,7 +15,13 @@ Wang Tianyang
 - Backend
 - Search
 
-TODO: Others
+Tang Shaowei
+
+- Login by HKU Email
+  - Email Address Check
+  - Email service for sending verification code to HKU Email
+- Me Page
+  - Support personal data representation and editing
 
 ## Timeline
 - 01/04/2022 - 07/04/2022: First Stage Development
