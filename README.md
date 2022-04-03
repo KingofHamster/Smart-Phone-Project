@@ -15,6 +15,11 @@ Wang Tianyang
 - Backend
 - Search
 
+Wang Jiaxing
+- Posts page
+- Comment & like
+- New post
+
 Tang Shaowei
 
 - Login by HKU Email
