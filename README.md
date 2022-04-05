@@ -16,9 +16,12 @@ Wang Tianyang
 - Search
 
 Wang Jiaxing
-- Posts page
-- Comment & like
-- New post
+- Main Page
+  - Display list of posts author and time.
+  - New post
+- Content Page
+  - The content of the post, comment function and reply. 
+
 
 Tang Shaowei
 
