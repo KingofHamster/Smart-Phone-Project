@@ -1,22 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.dashboard.DashboardFragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.dashboard.DashboardFragment"
+    android:id="@+id/wholedash">
 
-    <TextView
-        android:id="@+id/text_dashboard"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/whiteCardColor"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/return_white"
+                android:padding="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="Dashboard"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/ib_view"
+                android:layout_width="20dp"
+                android:layout_height="22dp"
+                android:background="@drawable/menu"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+
+        <ListView
+            android:id="@+id/rv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"/>
+    </LinearLayout>
+
+   <ImageButton
+       android:id="@+id/ib_add_notes"
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+       android:background="@drawable/add_notes"
+       android:layout_alignParentEnd="true"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentBottom="true"
+       android:layout_marginRight="23dp"
+       android:layout_marginBottom="80dp"
+       />
+
+
+    <LinearLayout
+        android:id="@+id/ll_function_view"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_marginTop="2dp"
+        >
+        <View
+            android:layout_width="1dp"
+            android:background="@color/white"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:text="删除"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:background="@color/white"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/btn_select_cancel"
+            android:text="取消"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            />
+        <View
+            android:layout_width="1dp"
+            android:background="@color/white"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/btn_select_all"
+            android:text="全选"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+        <View
+            android:layout_width="1dp"
+            android:background="@color/white"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+</RelativeLayout>
