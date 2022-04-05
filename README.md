@@ -35,6 +35,11 @@ Tang Shaowei
   - http://175.178.42.68:888/phpmyadmin_18787ffdd094dd55 for database administration
 
 
+LI Jingqi
+
+- Private Message
+
+
 ## Timeline
 - 01/04/2022 - 07/04/2022: First Stage Development
 - 08/04/2022: Presentation
