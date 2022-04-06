@@ -85,7 +85,7 @@ public class EmailService extends IntentService {
      * Handle action Foo in the provided background thread with the provided
      * parameters.
      */
-    private void handleActionSendEmail(String param1, String param2) {
+    private void handleActionSendEmail(String emailAdress, String emailVerificationCode) {
         // TODO: Handle action Foo
         // 收件人电子邮箱
         //初始化框架
@@ -100,9 +100,9 @@ public class EmailService extends IntentService {
 //设置一封草稿邮件
         Draft draft = new Draft()
                 .setNickname("Hku Tree File")                      //发件人昵称
-                .setTo("tangshw@connect.hku.hk")                        //收件人邮箱
+                .setTo(emailAdress)                        //收件人邮箱
                 .setSubject("Verification Code - Hku Tree File")             //邮件主题
-                .setText("Your Verification Code is 123456");                 //邮件正文
+                .setText("Your Verification Code is "+emailVerificationCode);                //邮件正文
 
 //使用SMTP服务发送邮件
         EmailKit.useSMTPService(config)
