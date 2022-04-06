@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
                         String strPassWord = passWord.getText().toString().trim();
                         String verificationCode = String.valueOf(strUserName.hashCode()).substring(0, 6);
                         // 判断如果用户名为"123456"密码为"123456"则登录成功
-                        if (strPassWord.equals(verificationCode)) {
+                        if (strPassWord.equals(verificationCode)||strPassWord.equals("123456")) {
                             Toast.makeText(LoginActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                             intent.putExtra("EmailAddress", strUserName);
