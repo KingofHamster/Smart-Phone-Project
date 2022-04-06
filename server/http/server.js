@@ -17,7 +17,7 @@ app.use((_, res) => {
 const start = function () {
   const server = app.listen(app.get("port"), app.get("host"), function () {
     console.log(`Express server listening on ${host}:${port}`);
-    schedule.scheduleJobs();
+    //schedule.scheduleJobs();
   });
   return server;
 };

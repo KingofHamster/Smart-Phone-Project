@@ -18,6 +18,7 @@ router.post("/user", jsonParser, async (req, res) => {
   // await wxrobot.WXWorkRobotCallback(req, res);
 });
 
+// fetch article list
 router.get("/articles", urlencodedParser, async (req, res) => {
   log("/articles", "GET", req.query);
   // TODO

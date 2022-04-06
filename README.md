@@ -13,7 +13,12 @@ We intend to build a Android App named "HKU Tree Hole", providing functions incl
 ## Division of Labor (first version for presentation)
 Wang Tianyang
 - Backend
-- Search
+  - Rest API Design
+  - Database (Redis)
+- MainPage
+  - Search
+  - Filter
+  - Sort
 
 Wang Jiaxing
 - Main Page
