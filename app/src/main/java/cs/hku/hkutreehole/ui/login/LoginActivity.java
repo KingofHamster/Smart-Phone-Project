@@ -1,5 +1,7 @@
 package cs.hku.hkutreehole.ui.login;
 
+import static cs.hku.hkutreehole.Utils.Utils.checkHKUEmailAddress;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -53,10 +55,15 @@ public class LoginActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         // send Email Verification Code
                         String emailAddress = userName.getText().toString().trim();
-                        String verificationCode = String.valueOf(emailAddress.hashCode()).substring(0, 6);
-                        EmailService.startActionSendEmail(LoginActivity.this,
-                                emailAddress,
-                                verificationCode);
+                        if(checkHKUEmailAddress(emailAddress)) {
+                            String verificationCode = String.valueOf(emailAddress.hashCode()).substring(0, 6);
+                            EmailService.startActionSendEmail(LoginActivity.this,
+                                    emailAddress,
+                                    verificationCode);
+                            Toast.makeText(LoginActivity.this, "Send Successfully", Toast.LENGTH_SHORT).show();
+                        }else {
+                            Toast.makeText(LoginActivity.this, "Not a HKU email address", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 }
         );
