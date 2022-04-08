@@ -1,4 +1,4 @@
-# Back End of HKU Tree Hole
+# BackEnd of HKU Tree Hole
 
 ## Setup
 1. Redis (for data storage)
@@ -23,3 +23,11 @@ for other OS, please refer to: https://redis.io/docs/getting-started/installatio
 
 2. Server (for connection with app client, handle requests, ...)
 TODO: npm build / run ...
+
+## Structure Design
+
+
+## API Document
+Host: localhost:8000 (TODO: Deployment on Tencent Cloud Server)
+Base Path: /api
+Please refer to: https://app.swaggerhub.com/apis-docs/SmartPhoneApp_2022/SmartPhoneAppHKU2022/1.0.0#/
