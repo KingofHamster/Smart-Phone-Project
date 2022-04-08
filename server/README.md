@@ -25,7 +25,7 @@ for other OS, please refer to: https://redis.io/docs/getting-started/installatio
 TODO: npm build / run ...
 
 ## Structure Design
-
+![Backend Design Graph](images/Structure.png)
 
 ## API Document
 Host: localhost:8000 (TODO: Deployment on Tencent Cloud Server)
