@@ -99,7 +99,7 @@ public class EmailService extends IntentService {
 
 //设置一封草稿邮件
         Draft draft = new Draft()
-                .setNickname("Hku Tree File")                      //发件人昵称
+                .setNickname("Hku Tree Hole")                      //发件人昵称
                 .setTo(emailAdress)                        //收件人邮箱
                 .setSubject("Verification Code - HKU Tree Hole")             //邮件主题
                 .setText("Your Verification Code is "+emailVerificationCode);                //邮件正文
