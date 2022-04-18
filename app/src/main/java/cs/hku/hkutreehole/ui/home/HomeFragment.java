@@ -29,7 +29,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -37,8 +39,11 @@ import cs.hku.hkutreehole.EmailService;
 import cs.hku.hkutreehole.R;
 import cs.hku.hkutreehole.databinding.FragmentHomeBinding;
 import cs.hku.hkutreehole.ui.login.LoginActivity;
+import okhttp3.FormBody;
+import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
+import okhttp3.RequestBody;
 import okhttp3.Response;
 
 
@@ -51,22 +56,34 @@ public class HomeFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         final TextView textView2 = root.findViewById(R.id.emailAdressTextView);
-        final Button button = root.findViewById(R.id.buttonGetVerificationCode);
+        final Button buttonSave = root.findViewById(R.id.buttonGetVerificationCode);
         final Button buttonLogOut = root.findViewById(R.id.buttonLogOut);
+        final Button buttonAnalyze = root.findViewById(R.id.buttonEmotionAnalysis);
         Intent intent = getActivity().getIntent();
         String emailAddres = intent.getStringExtra("EmailAddress");
         textView2.setText(emailAddres);
+        connect("");
 
 
         //Set Listener
-        button.setOnClickListener(new View.OnClickListener() {
+        buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 EditText emailAddress = root.findViewById(R.id.editTextTextEmailAddress);
                 //emailAddress.setText("hamster");
-                //textView2.setText("hamster");
-                connect("");
+                //textView2.setText("hamster")
 
+                try {
+                    okhttpconnet();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        buttonAnalyze.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 try {
                     okhttpconnet();
                 } catch (IOException e) {
@@ -203,21 +220,45 @@ public class HomeFragment extends Fragment {
         executor.execute(new Runnable(){
             @Override
             public void run() {
-                OkHttpClient client = new OkHttpClient();
-
+                OkHttpClient client = new OkHttpClient().newBuilder()
+                        .build();
+                String token = "24.cf88be4f1ba5a3c565aef936513ed7f0.2592000.1652869102.282335-25999734";
+                MediaType mediaType = MediaType.parse("application/json");
+                String textAnalysis = "I'm very happy today";
+                TextView textViewToAnalyze = getActivity().findViewById(R.id.multiAutoCompleteTextView);
+                textAnalysis = textViewToAnalyze.getText().toString().trim();
+                RequestBody body = RequestBody.create(mediaType, "{\r\n    \"text\": \""+textAnalysis+"\"\r\n}");
                 Request request = new Request.Builder()
-                        .url("https://twinword-sentiment-analysis.p.rapidapi.com/analyze/?text=great%20value%20in%20its%20price%20range!")
-                        .get()
-                        .addHeader("X-RapidAPI-Host", "twinword-sentiment-analysis.p.rapidapi.com")
-                        .addHeader("X-RapidAPI-Key", "575dd66314msh4aea627ed487363p14f34ajsncca33fdb619b")
+                        .url("https://aip.baidubce.com/rpc/2.0/nlp/v1/sentiment_classify?access_token="+token+"&charset=UTF-8")
+                        .method("POST", body)
+                        .addHeader("Content-Type", "application/json")
                         .build();
                 try {
                     Response response = client.newCall(request).execute();
-                    System.out.println(response.toString());
-                } catch (IOException e) {
+                    String jsonData = Objects.requireNonNull(response.body()).string();
+                    JSONObject emoAnalysisResult = new JSONObject(jsonData).getJSONArray("items").getJSONObject(0);
+                    System.out.println(emoAnalysisResult.getString("positive_prob"));
+                    handler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            TextView textViewPositiveValue = getActivity().findViewById(R.id.PositiveValue);
+                            TextView textViewNegativeValue = getActivity().findViewById(R.id.NegativeValue);
+                            try {
+                                Double posProb = Double.parseDouble(emoAnalysisResult.getString("positive_prob"));
+                                Double negProb = Double.parseDouble(emoAnalysisResult.getString("negative_prob"));
+                                DecimalFormat df = new DecimalFormat("00.00%");
+                                String posProbStr = df.format(posProb);
+                                String negProbStr = df.format(negProb);
+                                textViewPositiveValue.setText(posProbStr);
+                                textViewNegativeValue.setText(negProbStr);
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    });
+                } catch (IOException | JSONException e) {
                     e.printStackTrace();
                 }
-
             }
         });
     }
