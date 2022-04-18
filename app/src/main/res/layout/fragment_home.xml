@@ -13,13 +13,6 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
-        <TextView
-            android:id="@+id/emailAdressTextView"
-            android:layout_width="91dp"
-            android:layout_height="46dp"
-            android:text="@string/login"
-            android:layout_gravity="center"/>
-
         <EditText
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="match_parent"
@@ -51,11 +44,18 @@
             android:layout_gravity="center"/>
 
         <Button
-            android:id="@+id/login"
+            android:id="@+id/buttonLogOut"
             android:layout_width="107dp"
             android:layout_height="wrap_content"
-            android:text="@string/login"
+            android:text="@string/logout"
             android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/emailAdressTextView"
+            android:layout_width="91dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:text="" />
 
     </LinearLayout>
 
