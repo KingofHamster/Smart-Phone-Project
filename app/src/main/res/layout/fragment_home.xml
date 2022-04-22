@@ -39,7 +39,7 @@
                 android:id="@+id/textViewEmailAddress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Email Adress:" />
+                android:text="UserName:    " />
 
             <EditText
                 android:id="@+id/editTextUserName"
@@ -63,7 +63,7 @@
                 android:id="@+id/textViewFaculty"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Faculty:           " />
+                android:text="Faculty:          " />
 
             <EditText
                 android:id="@+id/editTextFaculty"
