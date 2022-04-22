@@ -39,11 +39,11 @@ public class LoginActivity extends AppCompatActivity {
                         // 判断如果用户名为"123456"密码为"123456"则登录成功
                         if (strPassWord.equals(verificationCode)||strPassWord.equals("123456")) {
                             Toast.makeText(LoginActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                            Intent intent = new Intent(v.getContext(), MainActivity.class);
                             intent.putExtra("EmailAddress", strUserName);
                             startActivity(intent);
                         } else {
-                            Toast.makeText(LoginActivity.this, "Error Information", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(v.getContext(), "Error Information", Toast.LENGTH_SHORT).show();
                         }
                     }
                 }
