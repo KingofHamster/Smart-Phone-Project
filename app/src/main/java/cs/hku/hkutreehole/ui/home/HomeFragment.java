@@ -1,7 +1,6 @@
 package cs.hku.hkutreehole.ui.home;
 
 import android.app.AlertDialog;
-import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -31,7 +30,6 @@ import java.util.Objects;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import cs.hku.hkutreehole.MainActivity;
 import cs.hku.hkutreehole.R;
 import cs.hku.hkutreehole.databinding.FragmentHomeBinding;
 import cs.hku.hkutreehole.ui.login.LoginActivity;
@@ -47,7 +45,7 @@ public class HomeFragment extends Fragment {
     private FragmentHomeBinding binding;
 
     private final String userInfoUrl = "http://175.178.42.68:12345/appProject/userInfo.php";
-    private final String updateUserInfoUrl = "http://175.178.42.68:12345/appProject/userInfo.php";
+    private final String updateUserInfoUrl = "http://175.178.42.68:12345/appProject/updateUserInfo.php";
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -59,7 +57,6 @@ public class HomeFragment extends Fragment {
         Intent intent = getActivity().getIntent();
         String emailAddres = intent.getStringExtra("EmailAddress");
         textViewEmailAddress.setText("Welcome! "+emailAddres);
-        Toast.makeText(getContext(), "Error Information", Toast.LENGTH_SHORT).show();
         requestUserInfo(emailAddres);
 
 
@@ -67,15 +64,16 @@ public class HomeFragment extends Fragment {
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                EditText emailAddress = (EditText) getActivity().findViewById(R.id.editTextTextEmailAddress);
-                //emailAddress.setText("hamster");
-                //textViewEmailAddress.setText("hamster")
+                EditText editTextUserName = (EditText) getActivity().findViewById(R.id.editTextUserName);
+                EditText editTextFaculty = (EditText) getActivity().findViewById(R.id.editTextFaculty);
+                TextView textViewEmailAddress = (TextView) getActivity().findViewById(R.id.emailAdressTextView);
 
-                try {
-                    okhttpconnet();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+                String userName = editTextUserName.getText().toString().trim();
+                String email = getActivity().getIntent().getStringExtra("EmailAddress").trim();
+                String faculty = editTextFaculty.getText().toString().trim();
+
+                conenctUpdateUserInfo(email, userName, faculty);
+
             }
         });
 
@@ -93,7 +91,7 @@ public class HomeFragment extends Fragment {
         buttonLogOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getContext(), LoginActivity.class);
+                Intent intent = new Intent(view.getContext(), LoginActivity.class);
                 startActivity(intent);
             }
         });
@@ -172,10 +170,41 @@ public class HomeFragment extends Fragment {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        EditText emailAddressEditText = getActivity().findViewById(R.id.editTextTextEmailAddress);
+        EditText emailAddressEditText = getActivity().findViewById(R.id.editTextUserName);
         EditText facultyEditText = getActivity().findViewById(R.id.editTextFaculty);
-        emailAddressEditText.setText(userName+"connet");
+        emailAddressEditText.setText(userName);
         facultyEditText.setText(faculty);
+    }
+
+    public void conenctUpdateUserInfo(String emailAddress, String userName, String faculty){
+        final String url = updateUserInfoUrl + "?email=" + android.net.Uri.encode(emailAddress, "UTF-8")
+                + "&userName=" + android.net.Uri.encode(userName, "UTF-8")
+                + "&faculty=" + android.net.Uri.encode(faculty, "UTF-8");
+
+        ExecutorService executor = Executors.newSingleThreadExecutor();
+        final Handler handler = new Handler(Looper.getMainLooper());
+        executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                boolean success = true;
+                String jsonString = getJsonPage(url);
+                if (jsonString.equals("Fail to login"))
+                    success = false;
+                boolean finalSuccess = success;
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (finalSuccess) {
+                            System.out.println(url);
+                            Toast.makeText(HomeFragment.this.getContext(), "Update Successfully", Toast.LENGTH_SHORT).show();
+                        } else {
+                            alert( "Error", "Fail to connect" );
+                        }
+//                        pdialog.hide();
+                    }
+                });
+            }
+        });
     }
 
     public void requestUserInfo(final String emailAddress){
