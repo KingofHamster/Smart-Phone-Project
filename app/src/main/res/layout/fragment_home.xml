@@ -10,52 +10,178 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
 
         <TextView
             android:id="@+id/emailAdressTextView"
-            android:layout_width="91dp"
-            android:layout_height="46dp"
-            android:text="@string/login"
-            android:layout_gravity="center"/>
-
-        <EditText
-            android:id="@+id/editTextTextEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/email_hint"
-            android:inputType="textEmailAddress"
-            android:minHeight="48dp"
-            android:textColorHint="#757575"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
 
-        <EditText
-            android:id="@+id/editTextTextPassword"
+        <View
+            android:id="@+id/divider2"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:ems="10"
-            android:hint="@string/verification_hint"
-            android:inputType="textPassword"
-            android:textColorHint="#757575" />
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewEmailAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserName:    " />
+
+            <EditText
+                android:id="@+id/editTextUserName"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:textColorHint="#757575" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewFaculty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faculty:          " />
+
+            <EditText
+                android:id="@+id/editTextFaculty"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Faculty"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:textColorHint="#757575" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonLogOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+
+                android:background="@drawable/translucent_button"
+                android:padding="10dp"
+                android:text="@string/logout"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/buttonUpdateUserInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+
+                android:background="@drawable/translucent_button"
+                android:padding="10dp"
+                android:text="Save"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiAutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="107dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/translucent_edit"
+            android:hint="Input a sentence describing your today for emotion analysis"
+            />
+
+        <LinearLayout
+            android:id="@+id/PositiveLayout"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="31dp">
+
+            <TextView
+                android:id="@+id/PositiveHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Positive Posibility"
+                android:textColor="@color/green_light"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/PositiveValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00%"
+                android:textColor="@color/green_light"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/NegativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="32dp">
+
+            <TextView
+                android:id="@+id/NegativeHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Negative Posibility"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/NegativeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00%"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+        </LinearLayout>
 
         <Button
-            android:id="@+id/buttonGetVerificationCode"
-            style="@style/Widget.AppCompat.Button"
+            android:id="@+id/buttonEmotionAnalysis"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTintMode="screen"
-            android:text="@string/get_code"
-            android:visibility="visible"
-            android:layout_gravity="center"/>
-
-        <Button
-            android:id="@+id/login"
-            android:layout_width="107dp"
-            android:layout_height="wrap_content"
-            android:text="@string/login"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/translucent_button"
+            android:text="Analyze" />
 
     </LinearLayout>
 
