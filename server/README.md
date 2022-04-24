@@ -21,11 +21,11 @@ brew services stop redis
 
 for other OS, please refer to: https://redis.io/docs/getting-started/installation/install-redis-on-mac-os/
 
-b. Node Server (for connection with app client, handle requests, ...)
+b. Server (for connection with app client, handle requests, ...)
 TODO: npm build / run ...
 
 ## 2. Structure Design
-
+![Backend Design Graph](images/Structure.png)
 
 ## 3. API Document
 Host: localhost:8000 (TODO: Deployment on Tencent Cloud Server)
