@@ -3,38 +3,68 @@ const bodyParser = require("body-parser");
 const utils = require("../utils");
 const article = require("../services/article");
 const user = require("../services/user");
+const comment = require("../services/comment");
 
 const router = express.Router();
 const jsonParser = bodyParser.json({ limit: "50mb" });
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
+// user apis
 // fetch user info
-//{ip_address}:8000/api/user
 router.get("/user", urlencodedParser, async (req, res) => {
   utils.log("/user", "GET", req.query);
   await user.getUserInfo(req, res);
 });
 
-// upload user info
+// add user
 router.post("/user", jsonParser, async (req, res) => {
   utils.log("/user", "POST", req.body);
-  // await wxrobot.WXWorkRobotCallback(req, res);
+  await user.addUser(req, res);
 });
 
+// list all user
+router.get("/users", urlencodedParser, async (req, res) => {
+  utils.log("/users", "GET", req.query);
+  await user.listUsers(req, res);
+});
+
+// update user info
+router.put("/user", jsonParser, async (req, res) => {
+  utils.log("/user", "PUT", req.body);
+  await user.updateUser(req, res);
+});
+
+// article apis
 // fetch article list
 router.get("/articles", urlencodedParser, async (req, res) => {
   utils.log("/articles", "GET", req.query);
-  // TODO
+  await article.listArticles(req, res);
 });
 
 router.get("/article", urlencodedParser, async (req, res) => {
   utils.log("/article", "GET", req.query);
-  // TODO: await wxrobot.WXWorkRobotCallback(req, res);
+  await article.getArticle(req, res);
 });
 
 router.post("/article", jsonParser, async (req, res) => {
   utils.log("/article", "POST", req.body);
-  //await feedback.FeedbackRobotCallback(req, res);
+  await article.postArticle(req, res);
 });
+
+router.put("/article", jsonParser, async (req, res) => {
+  utils.log("/article", "PUT", req.body);
+  await article.editArticle(req, res);
+})
+
+// comments apis
+router.get("/comment", urlencodedParser, async (req, res) => {
+  utils.log("/comment", "GET", req.query);
+  await comment.getCommentList(req, res);
+})
+
+router.post("/comment", jsonParser, async (req, res) => {
+  utils.log("/comment", "POST", req.body);
+  await comment.addComment(req, res);
+})
 
 module.exports = router;

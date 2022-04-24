@@ -1,15 +1,13 @@
-const redis = require('redis');
+// const redis = require('redis');
 
-//   await client.set('key', '13value');
-//   const value = await client.get('key');
+// const db = redis.createClient(); // localhost:6379
+// db.on('error', (err) => console.log('Redis Client Error', err));
 
-async function init() {
-    const client = redis.createClient(); // localhost:6379
-    client.on('error', (err) => console.log('Redis Client Error', err));
-    await client.connect();
-    console.log('Redis running at localhost:6379/');
-}
+// const client = async function init() {
+    
+//     await client.connect();
 
-module.exports = {
-    init,
-};
+//     return client;
+// }
+
+// module.exports = client;
