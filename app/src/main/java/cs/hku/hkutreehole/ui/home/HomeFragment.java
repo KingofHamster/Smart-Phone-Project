@@ -44,8 +44,8 @@ public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
 
-    private final String userInfoUrl = "http://175.178.42.68:12345/appProject/userInfo.php";
-    private final String updateUserInfoUrl = "http://175.178.42.68:12345/appProject/updateUserInfo.php";
+    private final String userInfoUrl = "http://175.178.42.68:8001/api/user";
+    private final String updateUserInfoUrl = "http://175.178.42.68:8001/api/user";
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -72,8 +72,8 @@ public class HomeFragment extends Fragment {
                 String email = getActivity().getIntent().getStringExtra("EmailAddress").trim();
                 String faculty = editTextFaculty.getText().toString().trim();
 
-                conenctUpdateUserInfo(email, userName, faculty);
-
+                //conenctUpdateUserInfo(email, userName, faculty);
+                conenctUpdateUserInfoNew(email, userName, faculty);
             }
         });
 
@@ -160,11 +160,11 @@ public class HomeFragment extends Fragment {
     }
 
     public void parse_JSON_String_and_Switch_Activity(String JSONString) {
-        String userName = "test";
-        String faculty = "user";
+        String userName = "";
+        String faculty = "";
         try {
             JSONObject rootJSONObj = new JSONObject(JSONString);
-            userName = rootJSONObj.getString("userName");
+            userName = rootJSONObj.getString("name");
             faculty = rootJSONObj.getString("faculty");
 
         } catch (JSONException e) {
@@ -172,15 +172,60 @@ public class HomeFragment extends Fragment {
         }
         EditText emailAddressEditText = getActivity().findViewById(R.id.editTextUserName);
         EditText facultyEditText = getActivity().findViewById(R.id.editTextFaculty);
-        emailAddressEditText.setText(userName);
-        facultyEditText.setText(faculty);
+        emailAddressEditText.setText(userName.equals("NULL")?"":userName);
+        facultyEditText.setText(faculty.equals("NULL")?"":faculty);
+    }
+
+    public void conenctUpdateUserInfoNew(String emailAddress, String userName, String faculty){
+        JSONObject jsonObject = new JSONObject();
+        try {
+            jsonObject.put("email", emailAddress);
+            jsonObject.put("name", userName);
+            jsonObject.put("faculty", faculty);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        ExecutorService executor = Executors.newSingleThreadExecutor();
+        final Handler handler = new Handler(Looper.getMainLooper());
+        executor.execute(new Runnable(){
+            @Override
+            public void run() {
+                OkHttpClient client = new OkHttpClient().newBuilder()
+                        .build();
+                MediaType mediaType = MediaType.parse("application/json");
+                RequestBody body = RequestBody.create(mediaType, jsonObject.toString());
+                Request request = new Request.Builder()
+                        .url(updateUserInfoUrl)
+                        .method("PUT", body)
+                        .addHeader("Content-Type", "application/json")
+                        .build();
+                try {
+                    Response response = client.newCall(request).execute();
+                    String resultJsonString = response.body().string();
+                    JSONObject resultJsonObject = new JSONObject(resultJsonString);
+                    String message = resultJsonObject.getString("message");
+                    System.out.println("message:" + message);
+                    handler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            if(message.equals("ok")){
+                                Toast.makeText(getContext(), "Update Successfully", Toast.LENGTH_SHORT).show();
+                            }else{
+                                Toast.makeText(getContext(), "Update Failedly", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+                } catch (IOException | JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
     public void conenctUpdateUserInfo(String emailAddress, String userName, String faculty){
         final String url = updateUserInfoUrl + "?email=" + android.net.Uri.encode(emailAddress, "UTF-8")
                 + "&userName=" + android.net.Uri.encode(userName, "UTF-8")
                 + "&faculty=" + android.net.Uri.encode(faculty, "UTF-8");
-
         ExecutorService executor = Executors.newSingleThreadExecutor();
         final Handler handler = new Handler(Looper.getMainLooper());
         executor.execute(new Runnable() {
@@ -235,7 +280,8 @@ public class HomeFragment extends Fragment {
                             parse_JSON_String_and_Switch_Activity(jsonString);
                             System.out.println(jsonString);
                         } else {
-                            alert( "Error", "Fail to connect" );
+                            Toast.makeText(getContext(), "Network Error", Toast.LENGTH_SHORT).show();
+                            //alert( "Error", "Fail to connect" );
                         }
 //                        pdialog.hide();
                     }
