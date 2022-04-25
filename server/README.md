@@ -22,12 +22,22 @@ brew services stop redis
 for other OS, please refer to: https://redis.io/docs/getting-started/installation/install-redis-on-mac-os/
 
 b. Server (for connection with app client, handle requests, ...)
-TODO: npm build / run ...
+```
+// start server
+cd Smart-Phone-Project/server
+forever start -o out.log index.js
+
+// stop server
+forever stopall
+```
 
 ## 2. Structure Design
 ![Backend Design Graph](images/Structure.png)
 
 ## 3. API Document
-Host: localhost:8000 (TODO: Deployment on Tencent Cloud Server)
-Base Path: /api
-Please refer to: https://app.swaggerhub.com/apis-docs/SmartPhoneApp_2022/SmartPhoneAppHKU2022/1.0.0#/
+### Article
+Please refer to: https://documenter.getpostman.com/view/9647531/UyrBjbvQ
+### User
+Please refer to: https://documenter.getpostman.com/view/9647531/UyrBjGDL
+### Comment
+Please refer to: https://documenter.getpostman.com/view/9647531/UyrBjbvP
