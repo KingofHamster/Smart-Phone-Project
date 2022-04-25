@@ -12,7 +12,14 @@ async function getUserInfo(req, res) {
   if (req.method.toLowerCase() === 'get') {
     const key = keyPrefix + userEmail;
     results = await db.get(key);
-    console.log(results);
+    if (!results) {
+      results = {
+        email: userEmail,
+        name: 'NULL',
+        faculty: 'NULL'
+      }
+      await db.set(key, results);
+    }
   }
 
   return utils.response(res, JSON.stringify(results));
