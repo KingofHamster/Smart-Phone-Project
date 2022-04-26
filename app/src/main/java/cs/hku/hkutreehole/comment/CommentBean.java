@@ -13,6 +13,8 @@ public class CommentBean {
     private String commentTime;		//评论时间
     private String commentContent;	//评论内容
     private String paisenum;
+    private boolean anonymous;
+    private boolean same;
 
     public String getPaisenum() {
         return paisenum;
@@ -60,5 +62,9 @@ public class CommentBean {
     public void setReplyList(List<ReplyBean> replyList) {
         this.replyList = replyList;
     }
+    public void setAnonymous(boolean anonymous) {this.anonymous = anonymous;}
+    public boolean getAnonymous(){ return anonymous;}
+    public void setSame(boolean same) {this.same = same;}
+    public boolean getSame(){ return same;}
 
 }
