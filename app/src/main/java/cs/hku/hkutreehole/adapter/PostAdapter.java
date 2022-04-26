@@ -2,6 +2,7 @@ package cs.hku.hkutreehole.adapter;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -16,6 +18,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import cs.hku.hkutreehole.MainActivity;
 import cs.hku.hkutreehole.R;
 import cs.hku.hkutreehole.comment.PostBean;
 import cs.hku.hkutreehole.comment.ReplyBean;
@@ -35,15 +38,17 @@ public class PostAdapter extends BaseAdapter {
     private ViewHolder mholder = null;
     private Map<Integer, Boolean> isVisible;
     private LinearLayout whole;
+    private View root;
 
     private Animation animation;//动画效果的
 
     public PostAdapter(Context context, List<PostBean> list
-            , int resourceId, Handler handler) {
+            , int resourceId, Handler handler, View root) {
         this.list = list;
         this.context = context;
         this.handler = handler;
         this.resourceId = resourceId;
+        this.root = root;
         inflater = LayoutInflater.from(context);
         setPaise();
     }
@@ -171,11 +176,15 @@ public class PostAdapter extends BaseAdapter {
                     break;
                 case R.id.whole:
                     Activity activity = (Activity) context;
+                    root.findViewById(R.id.wholes).setVisibility(View.GONE);
+                    root.findViewById(R.id.ib_add_notes).setVisibility(View.GONE);
                     activity.getFragmentManager()
                             .beginTransaction()
                             .replace(R.id.wholedash, new CommentFragment(), null)
                             .addToBackStack(null)
                             .commit();
+                    Intent intent = ((Activity) context).getIntent();
+                    intent.putExtra("id",list.get(position).getCommnetAccount());
                     break;
             }
         }
