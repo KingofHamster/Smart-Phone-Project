@@ -25,27 +25,24 @@ async function getArticle(req, res) {
   if (req.query.hasOwnProperty('id')) {
     key = keyPrefix + req.query.id;
     results = await db.get(key);
-  } else {
-    if (req.query.hasOwnProperty('author') || req.query.hasOwnProperty('title')) {
-      results = await db.listByPrefix(keyPrefix);
-      console.log(results);
-      for (const article of Object.values(results)) {
-        if (req.query.hasOwnProperty('author')) {
-          if (article.author !== req.query.author) {
-            delete results[article.ID];
-            continue;
-          }
-        }
-        if (req.query.hasOwnProperty('title')) {
-          if (article.title !== req.query.title) {
-            delete results[article.ID];
-          }
+  } else if (req.query.hasOwnProperty('author') || req.query.hasOwnProperty('title')) {
+    results = await db.listByPrefix(keyPrefix);
+    for (const article of Object.values(results)) {
+      if (req.query.hasOwnProperty('author')) {
+        if (article.author !== req.query.author) {
+          delete results[article.id];
+          continue;
         }
       }
-    } else {
+      if (req.query.hasOwnProperty('title')) {
+        if (article.title !== req.query.title) {
+          delete results[article.id];
+        }
+      }
+    }
+  } else {
       // missing query params
       return utils.response(res, '{ "code": -1, "message": "Error format" }');
-    }
   }
 
   return utils.response(res, JSON.stringify(results));
@@ -91,11 +88,15 @@ async function editArticle(req, res) {
 
   const key = keyPrefix + body.id;
   let article = await db.get(key);
-
   if (article) {
     article.lastEditTime = moment().format( "YYYY-MM-DD HH:mm:ss");
     article.text = body.text;
+    if (body.anonymous) {
+      article.anonymous = body.anonymous;
+    }
     await db.set(key, article);
+  } else {
+    return utils.response(res, '{ "code": -1, "message": "Article not found" }');
   }
 
   return utils.response(res, '{ "code": 0, "message": "ok" }');
