@@ -2,8 +2,8 @@ const express = require("express");
 const api = require("./api");
 
 const app = express();
-const host = "localhost";
-const port = 8000;
+const host = "0.0.0.0";
+const port = 8001;
 
 app.set("host", host);
 app.set("port", port);
