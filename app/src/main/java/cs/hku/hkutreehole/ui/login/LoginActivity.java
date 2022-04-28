@@ -2,7 +2,6 @@ package cs.hku.hkutreehole.ui.login;
 
 import static cs.hku.hkutreehole.Utils.Utils.checkHKUEmailAddress;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -42,6 +41,7 @@ public class LoginActivity extends AppCompatActivity {
                             Intent intent = new Intent(v.getContext(), MainActivity.class);
                             intent.putExtra("EmailAddress", strUserName);
                             startActivity(intent);
+
                         } else {
                             Toast.makeText(v.getContext(), "Error Information", Toast.LENGTH_SHORT).show();
                         }

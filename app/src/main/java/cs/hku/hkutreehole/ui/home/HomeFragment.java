@@ -33,6 +33,8 @@ import java.util.concurrent.Executors;
 import cs.hku.hkutreehole.R;
 import cs.hku.hkutreehole.databinding.FragmentHomeBinding;
 import cs.hku.hkutreehole.ui.login.LoginActivity;
+import cs.hku.hkutreehole.im.ImLogic;
+import cs.hku.hkutreehole.im.LL;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -56,6 +58,13 @@ public class HomeFragment extends Fragment {
         final Button buttonAnalyze = root.findViewById(R.id.buttonEmotionAnalysis);
         Intent intent = getActivity().getIntent();
         String emailAddres = intent.getStringExtra("EmailAddress");
+        //email作为登录腾讯IM的id (唯一标识)
+        ImLogic.inst.initIm(emailAddres,new ImLogic.ImLogicCallback() {
+            @Override
+            public void initSuccess() {
+                LL.Companion.log("initSuccess");
+            }
+        });
         textViewEmailAddress.setText("Welcome! "+emailAddres);
         requestUserInfo(emailAddres);
 
