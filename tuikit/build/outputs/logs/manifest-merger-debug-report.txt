@@ -1,165 +1,165 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:1:1-69:12
-INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:1:1-69:12
-INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:1:1-69:12
-INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:1:1-69:12
-INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:1:1-69:12
-INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:1:1-69:12
-INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:1:1-69:12
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:1:1-69:12
+INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:1:1-69:12
+INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:1:1-69:12
+INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:1:1-69:12
+INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:1:1-69:12
+INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:1:1-69:12
+INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:1:1-69:12
 	package
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:2:5-43
-		INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml
-		INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:2:5-43
+		INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml
+		INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:1:1-69:12
-		INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml
+		INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:1:1-69:12
+		INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:1:1-69:12
-		INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml
+		INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:1:1-69:12
+		INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:1:11-69
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:4:5-79
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:4:5-79
 	android:name
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:4:22-76
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:4:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:5:5-76
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:5:5-76
 	android:name
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:5:22-73
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:5:22-73
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:6:5-75
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:6:5-75
 	android:name
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:6:22-72
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:6:22-72
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:7:5-81
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:7:22-78
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:7:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:8:5-80
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:8:5-80
 	android:name
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:8:22-77
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:8:22-77
 uses-permission#android.permission.VIBRATE
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:9:5-65
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:9:5-65
 	android:name
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:9:22-63
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:9:22-63
 application
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:11:5-67:19
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:11:5-67:19
 activity#com.tencent.qcloud.tim.uikit.component.video.CameraActivity
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:12:9-14:52
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:12:9-14:52
 	android:screenOrientation
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:14:13-49
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:14:13-49
 	android:name
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:13:13-59
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:13:13-59
 activity#com.tencent.qcloud.tim.uikit.component.video.VideoViewActivity
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:15:9-17:77
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:15:9-17:77
 	android:configChanges
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:17:13-74
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:17:13-74
 	android:name
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:16:13-62
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:16:13-62
 activity#com.tencent.qcloud.tim.uikit.component.photoview.PhotoViewActivity
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:18:9-20:52
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:18:9-20:52
 	android:screenOrientation
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:20:13-49
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:20:13-49
 	android:name
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:19:13-66
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:19:13-66
 activity#com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoActivity
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:21:9-23:52
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:21:9-23:52
 	android:screenOrientation
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:23:13-49
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:23:13-49
 	android:name
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:22:13-65
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:22:13-65
 activity#com.tencent.qcloud.tim.uikit.modules.group.info.StartGroupMemberSelectActivity
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:24:9-27:52
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:24:9-27:52
 	android:screenOrientation
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:27:13-49
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:27:13-49
 	android:launchMode
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:26:13-48
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:26:13-48
 	android:name
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:25:13-78
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:25:13-78
 activity#com.tencent.qcloud.tim.uikit.component.SelectionActivity
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:28:9-30:52
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:28:9-30:52
 	android:screenOrientation
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:30:13-49
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:30:13-49
 	android:name
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:29:13-56
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:29:13-56
 activity#com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyManagerActivity
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:31:9-34:73
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:31:9-34:73
 	android:screenOrientation
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:33:13-49
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:33:13-49
 	android:windowSoftInputMode
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:34:13-70
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:34:13-70
 	android:name
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:32:13-74
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:32:13-74
 activity#com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyMemberActivity
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:35:9-38:73
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:35:9-38:73
 	android:screenOrientation
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:37:13-49
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:37:13-49
 	android:windowSoftInputMode
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:38:13-70
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:38:13-70
 	android:name
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:36:13-73
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:36:13-73
 activity#com.tencent.liteav.SelectContactActivity
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:40:9-45:66
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:40:9-45:66
 	android:screenOrientation
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:43:13-49
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:43:13-49
 	android:launchMode
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:42:13-43
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:42:13-43
 	android:windowSoftInputMode
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:44:13-60
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:44:13-60
 	android:theme
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:45:13-63
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:45:13-63
 	android:name
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:41:13-68
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:41:13-68
 activity#com.tencent.liteav.trtcaudiocalldemo.ui.TRTCAudioCallActivity
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:46:9-50:66
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:46:9-50:66
 	android:screenOrientation
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:49:13-49
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:49:13-49
 	android:launchMode
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:48:13-43
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:48:13-43
 	android:theme
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:50:13-63
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:50:13-63
 	android:name
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:47:13-89
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:47:13-89
 activity#com.tencent.liteav.trtcvideocalldemo.ui.TRTCVideoCallActivity
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:51:9-55:66
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:51:9-55:66
 	android:screenOrientation
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:54:13-49
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:54:13-49
 	android:launchMode
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:53:13-43
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:53:13-43
 	android:theme
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:55:13-63
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:55:13-63
 	android:name
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:52:13-89
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:52:13-89
 provider#com.tencent.qcloud.tim.uikit.utils.TUIKitFileProvider
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:57:9-65:20
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:57:9-65:20
 	android:grantUriPermissions
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:61:13-47
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:61:13-47
 	android:authorities
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:59:13-70
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:59:13-70
 	android:exported
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:60:13-37
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:60:13-37
 	android:name
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:58:13-53
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:58:13-53
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:62:13-64:60
+ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:62:13-64:60
 	android:resource
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:64:17-58
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:64:17-58
 	android:name
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:63:17-67
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml:63:17-67
 uses-sdk
-INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml
-INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml
-INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml
-INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml
+INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml
+INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml
+INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml
+INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml
-		INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml
+		INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml
+		INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml
-		ADDED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml
-		INJECTED from /Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml
+		INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml
+		ADDED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml
+		INJECTED from D:\22Sem2\Smart phone app\group project\Smart-Phone-Project\Smart-Phone-Project\tuikit\src\main\AndroidManifest.xml

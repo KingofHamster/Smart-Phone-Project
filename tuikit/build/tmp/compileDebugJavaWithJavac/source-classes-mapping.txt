@@ -66,10 +66,10 @@ com/tencent/qcloud/tim/uikit/modules/chat/layout/message/holder/MessageBaseHolde
  com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.MessageBaseHolder$Factory
 com/tencent/qcloud/tim/uikit/component/picture/imageEngine/impl/GlideEngine.java
  com.tencent.qcloud.tim.uikit.component.picture.imageEngine.impl.GlideEngine
-com/tencent/qcloud/tim/uikit/component/video/util/CheckPermission.java
- com.tencent.qcloud.tim.uikit.component.video.util.CheckPermission
 com/tencent/qcloud/tim/uikit/component/photoview/OnViewTapListener.java
  com.tencent.qcloud.tim.uikit.component.photoview.OnViewTapListener
+com/tencent/qcloud/tim/uikit/component/video/util/CheckPermission.java
+ com.tencent.qcloud.tim.uikit.component.video.util.CheckPermission
 com/tencent/qcloud/tim/uikit/utils/MD5Utils.java
  com.tencent.qcloud.tim.uikit.utils.MD5Utils
 com/tencent/qcloud/tim/uikit/component/indexlib/IndexBar/helper/IndexBarDataHelperImpl.java
@@ -164,10 +164,10 @@ com/tencent/qcloud/tim/uikit/modules/group/info/StartGroupMemberSelectActivity.j
  com.tencent.qcloud.tim.uikit.modules.group.info.StartGroupMemberSelectActivity$2
  com.tencent.qcloud.tim.uikit.modules.group.info.StartGroupMemberSelectActivity$3
  com.tencent.qcloud.tim.uikit.modules.group.info.StartGroupMemberSelectActivity$4
-com/tencent/qcloud/tim/uikit/modules/contact/interfaces/IContactLayout.java
- com.tencent.qcloud.tim.uikit.modules.contact.interfaces.IContactLayout
 com/tencent/qcloud/tim/uikit/base/BaseActvity.java
  com.tencent.qcloud.tim.uikit.base.BaseActvity
+com/tencent/qcloud/tim/uikit/modules/contact/interfaces/IContactLayout.java
+ com.tencent.qcloud.tim.uikit.modules.contact.interfaces.IContactLayout
 com/tencent/qcloud/tim/uikit/component/video/proxy/MediaPlayerProxy.java
  com.tencent.qcloud.tim.uikit.component.video.proxy.MediaPlayerProxy
 com/tencent/qcloud/tim/uikit/utils/PopWindowUtil.java
@@ -305,10 +305,10 @@ com/tencent/qcloud/tim/uikit/component/video/proxy/IPlayer.java
  com.tencent.qcloud.tim.uikit.component.video.proxy.IPlayer$OnVideoSizeChangedListener
 com/tencent/qcloud/tim/uikit/modules/conversation/base/ConversationIconView.java
  com.tencent.qcloud.tim.uikit.modules.conversation.base.ConversationIconView
-com/tencent/qcloud/tim/uikit/component/picture/imageEngine/impl/CornerTransform.java
- com.tencent.qcloud.tim.uikit.component.picture.imageEngine.impl.CornerTransform
 com/tencent/qcloud/tim/uikit/component/photoview/OnGestureListener.java
  com.tencent.qcloud.tim.uikit.component.photoview.OnGestureListener
+com/tencent/qcloud/tim/uikit/component/picture/imageEngine/impl/CornerTransform.java
+ com.tencent.qcloud.tim.uikit.component.picture.imageEngine.impl.CornerTransform
 com/tencent/qcloud/tim/uikit/utils/FileUtil.java
  com.tencent.qcloud.tim.uikit.utils.FileUtil
  com.tencent.qcloud.tim.uikit.utils.FileUtil$1
@@ -344,6 +344,8 @@ com/tencent/liteav/trtcaudiocalldemo/ui/audiolayout/TRTCAudioLayoutManager.java
  com.tencent.liteav.trtcaudiocalldemo.ui.audiolayout.TRTCAudioLayoutManager$2
  com.tencent.liteav.trtcaudiocalldemo.ui.audiolayout.TRTCAudioLayoutManager$3
  com.tencent.liteav.trtcaudiocalldemo.ui.audiolayout.TRTCAudioLayoutManager$TRTCLayoutEntity
+com/tencent/qcloud/tim/uikit/base/GroupListenerConstants.java
+ com.tencent.qcloud.tim.uikit.base.GroupListenerConstants
 com/tencent/qcloud/tim/uikit/modules/group/info/GroupInfoProvider.java
  com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoProvider
  com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoProvider$1
@@ -359,8 +361,6 @@ com/tencent/qcloud/tim/uikit/modules/group/info/GroupInfoProvider.java
  com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoProvider$7
  com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoProvider$8
  com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoProvider$9
-com/tencent/qcloud/tim/uikit/base/GroupListenerConstants.java
- com.tencent.qcloud.tim.uikit.base.GroupListenerConstants
 com/tencent/qcloud/tim/uikit/component/photoview/CustomGestureDetector.java
  com.tencent.qcloud.tim.uikit.component.photoview.CustomGestureDetector
  com.tencent.qcloud.tim.uikit.component.photoview.CustomGestureDetector$1
@@ -378,6 +378,8 @@ com/tencent/qcloud/tim/uikit/component/video/JCameraView.java
  com.tencent.qcloud.tim.uikit.component.video.JCameraView$9
 com/tencent/qcloud/tim/uikit/component/face/RecentEmojiManager.java
  com.tencent.qcloud.tim.uikit.component.face.RecentEmojiManager
+com/tencent/qcloud/tim/uikit/modules/conversation/interfaces/IConversationListLayout.java
+ com.tencent.qcloud.tim.uikit.modules.conversation.interfaces.IConversationListLayout
 com/tencent/qcloud/tim/uikit/modules/group/member/GroupMemberManagerAdapter.java
  com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerAdapter
  com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerAdapter$1
@@ -385,8 +387,6 @@ com/tencent/qcloud/tim/uikit/modules/group/member/GroupMemberManagerAdapter.java
  com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerAdapter$1$1$1
  com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerAdapter$2
  com.tencent.qcloud.tim.uikit.modules.group.member.GroupMemberManagerAdapter$MyViewHolder
-com/tencent/qcloud/tim/uikit/modules/conversation/interfaces/IConversationListLayout.java
- com.tencent.qcloud.tim.uikit.modules.conversation.interfaces.IConversationListLayout
 com/tencent/qcloud/tim/uikit/utils/ImageUtil.java
  com.tencent.qcloud.tim.uikit.utils.ImageUtil
  com.tencent.qcloud.tim.uikit.utils.ImageUtil$CopyImageInfo
@@ -551,12 +551,10 @@ com/tencent/qcloud/tim/uikit/modules/message/GiftRedPackage.java
  com.tencent.qcloud.tim.uikit.modules.message.GiftRedPackage$GiftBean
 com/tencent/qcloud/tim/uikit/modules/chat/interfaces/IChatProvider.java
  com.tencent.qcloud.tim.uikit.modules.chat.interfaces.IChatProvider
-com/tencent/qcloud/tim/uikit/utils/ThreadHelper.java
- com.tencent.qcloud.tim.uikit.utils.ThreadHelper
 com/tencent/qcloud/tim/uikit/modules/conversation/base/ConversationInfo.java
  com.tencent.qcloud.tim.uikit.modules.conversation.base.ConversationInfo
-com/tencent/qcloud/tim/uikit/modules/group/interfaces/IGroupMemberLayout.java
- com.tencent.qcloud.tim.uikit.modules.group.interfaces.IGroupMemberLayout
+com/tencent/qcloud/tim/uikit/utils/ThreadHelper.java
+ com.tencent.qcloud.tim.uikit.utils.ThreadHelper
 com/tencent/qcloud/tim/uikit/modules/conversation/ConversationManagerKit.java
  com.tencent.qcloud.tim.uikit.modules.conversation.ConversationManagerKit
  com.tencent.qcloud.tim.uikit.modules.conversation.ConversationManagerKit$1
@@ -564,6 +562,8 @@ com/tencent/qcloud/tim/uikit/modules/conversation/ConversationManagerKit.java
  com.tencent.qcloud.tim.uikit.modules.conversation.ConversationManagerKit$3
  com.tencent.qcloud.tim.uikit.modules.conversation.ConversationManagerKit$4
  com.tencent.qcloud.tim.uikit.modules.conversation.ConversationManagerKit$MessageUnreadWatcher
+com/tencent/qcloud/tim/uikit/modules/group/interfaces/IGroupMemberLayout.java
+ com.tencent.qcloud.tim.uikit.modules.group.interfaces.IGroupMemberLayout
 com/tencent/qcloud/tim/uikit/modules/chat/interfaces/IInputLayout.java
  com.tencent.qcloud.tim.uikit.modules.chat.interfaces.IInputLayout
 com/tencent/qcloud/tim/uikit/config/TUIKitConfigs.java
@@ -637,10 +637,10 @@ com/tencent/qcloud/tim/uikit/component/video/proxy/IjkMediaPlayerWrapper.java
  com.tencent.qcloud.tim.uikit.component.video.proxy.IjkMediaPlayerWrapper$ListenerHandler
 com/tencent/qcloud/tim/uikit/component/video/listener/ResultListener.java
  com.tencent.qcloud.tim.uikit.component.video.listener.ResultListener
-com/tencent/qcloud/tim/uikit/utils/ScreenUtil.java
- com.tencent.qcloud.tim.uikit.utils.ScreenUtil
 com/tencent/qcloud/tim/uikit/modules/group/apply/GroupApplyMemberActivity.java
  com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyMemberActivity
+com/tencent/qcloud/tim/uikit/utils/ScreenUtil.java
+ com.tencent.qcloud.tim.uikit.utils.ScreenUtil
 com/tencent/qcloud/tim/uikit/component/video/state/PreviewState.java
  com.tencent.qcloud.tim.uikit.component.video.state.PreviewState
  com.tencent.qcloud.tim.uikit.component.video.state.PreviewState$1
@@ -886,25 +886,25 @@ com/tencent/liteav/AVCallManager.java
  com.tencent.liteav.AVCallManager$2
  com.tencent.liteav.AVCallManager$2$1
  com.tencent.liteav.AVCallManager$AVCallManagerHolder
-com/tencent/qcloud/tim/uikit/utils/PermissionUtils.java
- com.tencent.qcloud.tim.uikit.utils.PermissionUtils
- com.tencent.qcloud.tim.uikit.utils.PermissionUtils$1
- com.tencent.qcloud.tim.uikit.utils.PermissionUtils$2
 com/tencent/qcloud/tim/uikit/modules/conversation/ConversationListLayout.java
  com.tencent.qcloud.tim.uikit.modules.conversation.ConversationListLayout
  com.tencent.qcloud.tim.uikit.modules.conversation.ConversationListLayout$OnItemClickListener
  com.tencent.qcloud.tim.uikit.modules.conversation.ConversationListLayout$OnItemLongClickListener
+com/tencent/qcloud/tim/uikit/utils/PermissionUtils.java
+ com.tencent.qcloud.tim.uikit.utils.PermissionUtils
+ com.tencent.qcloud.tim.uikit.utils.PermissionUtils$1
+ com.tencent.qcloud.tim.uikit.utils.PermissionUtils$2
 com/tencent/qcloud/tim/uikit/modules/conversation/interfaces/IConversationAdapter.java
  com.tencent.qcloud.tim.uikit.modules.conversation.interfaces.IConversationAdapter
 com/tencent/qcloud/tim/uikit/component/video/listener/ReturnListener.java
  com.tencent.qcloud.tim.uikit.component.video.listener.ReturnListener
 com/tencent/qcloud/tim/uikit/component/video/util/AudioUtil.java
  com.tencent.qcloud.tim.uikit.component.video.util.AudioUtil
-com/tencent/qcloud/tim/uikit/modules/group/apply/GroupApplyManagerActivity.java
- com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyManagerActivity
 com/tencent/qcloud/tim/uikit/modules/conversation/ConversationLayout.java
  com.tencent.qcloud.tim.uikit.modules.conversation.ConversationLayout
  com.tencent.qcloud.tim.uikit.modules.conversation.ConversationLayout$1
+com/tencent/qcloud/tim/uikit/modules/group/apply/GroupApplyManagerActivity.java
+ com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyManagerActivity
 com/tencent/qcloud/tim/uikit/base/ILayout.java
  com.tencent.qcloud.tim.uikit.base.ILayout
 com/tencent/qcloud/tim/uikit/component/photoview/Compat.java
