@@ -1,0 +1,140 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tencent.qcloud.tim.uikit"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:4:5-79
+11-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:4:22-76
+12    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+12-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:5:5-76
+12-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:5:22-73
+13    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+13-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:6:5-75
+13-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:6:22-72
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:7:5-81
+14-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:7:22-78
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:8:5-80
+15-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:8:22-77
+16    <uses-permission android:name="android.permission.VIBRATE" />
+16-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:9:5-65
+16-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:9:22-63
+17
+18    <application>
+18-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:11:5-67:19
+19        <activity
+19-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:12:9-14:52
+20            android:name="com.tencent.qcloud.tim.uikit.component.video.CameraActivity"
+20-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:13:13-59
+21            android:screenOrientation="portrait" />
+21-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:14:13-49
+22        <activity
+22-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:15:9-17:77
+23            android:name="com.tencent.qcloud.tim.uikit.component.video.VideoViewActivity"
+23-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:16:13-62
+24            android:configChanges="keyboardHidden|orientation|screenSize" />
+24-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:17:13-74
+25        <activity
+25-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:18:9-20:52
+26            android:name="com.tencent.qcloud.tim.uikit.component.photoview.PhotoViewActivity"
+26-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:19:13-66
+27            android:screenOrientation="portrait" />
+27-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:20:13-49
+28        <activity
+28-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:21:9-23:52
+29            android:name="com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoActivity"
+29-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:22:13-65
+30            android:screenOrientation="portrait" />
+30-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:23:13-49
+31        <activity
+31-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:24:9-27:52
+32            android:name="com.tencent.qcloud.tim.uikit.modules.group.info.StartGroupMemberSelectActivity"
+32-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:25:13-78
+33            android:launchMode="singleInstance"
+33-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:26:13-48
+34            android:screenOrientation="portrait" />
+34-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:27:13-49
+35        <activity
+35-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:28:9-30:52
+36            android:name="com.tencent.qcloud.tim.uikit.component.SelectionActivity"
+36-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:29:13-56
+37            android:screenOrientation="portrait" />
+37-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:30:13-49
+38        <activity
+38-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:31:9-34:73
+39            android:name="com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyManagerActivity"
+39-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:32:13-74
+40            android:screenOrientation="portrait"
+40-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:33:13-49
+41            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+41-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:34:13-70
+42        <activity
+42-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:35:9-38:73
+43            android:name="com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyMemberActivity"
+43-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:36:13-73
+44            android:screenOrientation="portrait"
+44-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:37:13-49
+45            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+45-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:38:13-70
+46        <activity
+46-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:40:9-45:66
+47            android:name="com.tencent.liteav.SelectContactActivity"
+47-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:41:13-68
+48            android:launchMode="singleTop"
+48-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:42:13-43
+49            android:screenOrientation="portrait"
+49-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:43:13-49
+50            android:theme="@style/Theme.AppCompat.NoActionBar"
+50-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:45:13-63
+51            android:windowSoftInputMode="stateAlwaysHidden" />
+51-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:44:13-60
+52        <activity
+52-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:46:9-50:66
+53            android:name="com.tencent.liteav.trtcaudiocalldemo.ui.TRTCAudioCallActivity"
+53-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:47:13-89
+54            android:launchMode="singleTop"
+54-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:48:13-43
+55            android:screenOrientation="portrait"
+55-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:49:13-49
+56            android:theme="@style/Theme.AppCompat.NoActionBar" />
+56-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:50:13-63
+57        <activity
+57-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:51:9-55:66
+58            android:name="com.tencent.liteav.trtcvideocalldemo.ui.TRTCVideoCallActivity"
+58-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:52:13-89
+59            android:launchMode="singleTop"
+59-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:53:13-43
+60            android:screenOrientation="portrait"
+60-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:54:13-49
+61            android:theme="@style/Theme.AppCompat.NoActionBar" />
+61-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:55:13-63
+62
+63        <provider
+63-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:57:9-65:20
+64            android:name="com.tencent.qcloud.tim.uikit.utils.TUIKitFileProvider"
+64-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:58:13-53
+65            android:authorities="${applicationId}.uikit.fileprovider"
+65-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:59:13-70
+66            android:exported="false"
+66-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:60:13-37
+67            android:grantUriPermissions="true" >
+67-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:61:13-47
+68            <meta-data
+68-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:62:13-64:60
+69                android:name="android.support.FILE_PROVIDER_PATHS"
+69-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:63:17-67
+70                android:resource="@xml/file_paths_public" />
+70-->/Users/zj/StudioProjects/Smart-Phone-Project/tuikit/src/main/AndroidManifest.xml:64:17-58
+71        </provider>
+72    </application>
+73
+74</manifest>
