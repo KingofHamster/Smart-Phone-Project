@@ -15,10 +15,10 @@ Wang Tianyang
 - Backend
   - Rest API Design
   - Database (Redis)
+  - For details: https://github.com/KingofHamster/Smart-Phone-Project/tree/main/server/README.md
 - MainPage
   - Search
   - Filter
-  - Sort
 
 Wang Jiaxing
 - Main Page
