@@ -44,7 +44,11 @@ Tang Shaowei
 
 LI Jingqi
 
-- Private Message
+- Instant Messaging based on Tencent IM API
+  - deploy TUIKit, initialize IM API
+  - Create new chat
+  - List exist Conversation
+  - Send instant message, support text message, voice messgae and images
 
 
 ## Timeline
