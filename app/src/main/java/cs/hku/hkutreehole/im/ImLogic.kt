@@ -17,10 +17,7 @@ class ImLogic {
 
         //登录腾讯IM
         fun initIm(strUserName: String, callback: ImLogicCallback) {
-            if (loginStatus) {
-                callback.initSuccess()
-                return
-            }
+
 
             TUIKit.login(
                 strUserName,
