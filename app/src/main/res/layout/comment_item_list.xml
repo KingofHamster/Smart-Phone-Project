@@ -76,13 +76,13 @@
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:layout_marginLeft="20dp"
-            android:background="@drawable/button_comment_item"
+            android:background="@drawable/translucent_button"
             android:paddingBottom="3dp"
             android:paddingLeft="12dp"
             android:paddingRight="12dp"
             android:paddingTop="3dp"
             android:text="Reply"
-            android:textColor="#17a0f1"
+            android:textColor="@color/white"
             android:visibility="visible" />
 
         <Button
@@ -90,7 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:layout_marginLeft="20dp"
-            android:background="@drawable/button_comment_item"
+            android:background="@drawable/translucent_button"
             android:paddingBottom="3dp"
             android:paddingLeft="12dp"
             android:paddingRight="12dp"

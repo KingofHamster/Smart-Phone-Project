@@ -1,18 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.dashboard.DashboardFragment"
     android:id="@+id/wholedash"
+    android:layout_marginTop="20dp"
     android:layout_marginBottom="105dp">
 
+    <Button
+        android:id="@+id/hides"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#19000000"
+        android:visibility="invisible"></Button>
+
+
     <LinearLayout
+        android:id="@+id/wholes"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <RelativeLayout
+            android:id="@+id/topbar"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:background="@color/whiteCardColor"
@@ -25,34 +36,37 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
-                android:src="@drawable/return_white"
-                android:padding="5dp" />
+                android:padding="5dp"
+                android:src="@drawable/return_white" />
 
-            <TextView
+            <EditText
+                android:id="@+id/hotwords"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_centerInParent="true"
                 android:gravity="center_vertical"
-                android:text="Dashboard"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:hint="Hot words"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
             <ImageButton
-                android:id="@+id/ib_view"
-                android:layout_width="20dp"
-                android:layout_height="22dp"
-                android:background="@drawable/menu"
+                android:id="@+id/search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                />
+                android:background="@drawable/menu" />
 
         </RelativeLayout>
-
 
         <ListView
             android:id="@+id/rv_content"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
     </LinearLayout>
 
    <ImageButton
@@ -64,67 +78,133 @@
        android:layout_alignParentRight="true"
        android:layout_alignParentBottom="true"
        />
-
-
-    <LinearLayout
-        android:id="@+id/ll_function_view"
-        android:layout_alignParentTop="true"
-        android:orientation="horizontal"
+    <cs.hku.hkutreehole.ui.dashboard.NoTouchLinearLayout
+        android:id="@+id/edit_vg_lyt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:background="@color/white"
-        android:layout_marginTop="2dp"
-        >
-        <View
-            android:layout_width="1dp"
-            android:background="@color/white"
-            android:layout_height="40dp" />
+        android:background="#77030303"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        android:visibility="invisible">
+        <LinearLayout
+            android:id="@+id/ll_comment_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F1F1F1"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="40dp">
+            <!-- 输入框 -->
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_bg"
+                android:gravity="left"
+                android:hint="Title"
+                android:inputType="textMultiLine"
+                android:maxLength="140"
+                android:maxLines="6"
+                android:minHeight="20dp" />
+            <EditText
+                android:id="@+id/edit_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:gravity="left"
+                android:hint="Content"
+                android:inputType="textMultiLine"
+                android:maxLength="140"
+                android:maxLines="6"
+                android:minHeight="120dp" />
 
-        <Button
-            android:id="@+id/btn_delete"
-            android:text="删除"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="40dp"
-            android:background="@null"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp">
 
-        <View
-            android:layout_width="1dp"
-            android:background="@color/white"
-            android:layout_height="40dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btn_select_cancel"
-            android:text="取消"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="40dp"
-            android:background="@null"
-            android:textColor="#ffffff"
-            android:textSize="18sp"
-            />
-        <View
-            android:layout_width="1dp"
-            android:background="@color/white"
-            android:layout_height="40dp" />
-        <Button
-            android:id="@+id/btn_select_all"
-            android:text="全选"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="40dp"
-            android:background="@null"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            />
-        <View
-            android:layout_width="1dp"
-            android:background="@color/white"
-            android:layout_height="40dp" />
-    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#848484" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/font_140_03" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="words"
+                        android:textColor="#848484"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+
+
+                <CheckBox
+                    android:id="@+id/checkbox_anonymous"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:checked="false"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="Anonymous"
+                    android:textColor="#848484"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/but_comment_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/translucent_button"
+                    android:text="Cancel"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/but_comment_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/translucent_button"
+                    android:text="Post"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </cs.hku.hkutreehole.ui.dashboard.NoTouchLinearLayout>
 
 </RelativeLayout>

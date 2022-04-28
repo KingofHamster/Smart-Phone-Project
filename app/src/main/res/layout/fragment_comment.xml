@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/heighta"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".ui.dashboard.CommentFragment"
-    android:background="@color/white">
+    android:background="@color/loginBkColor"
+    tools:context=".ui.dashboard.CommentFragment">
+
 
     <!-- 新闻内容/评论区-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingTop="5dp"
         android:paddingLeft="5dp"
+        android:paddingTop="5dp"
         android:paddingRight="5dp">
         <!--第一部分，新闻区-->
         <LinearLayout
@@ -20,10 +22,26 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <!-- 新闻作者头像-->
-            <ImageView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_launcher" />
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_launcher" />
+                <Button
+                    android:id="@+id/button_edit"
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/translucent_button"
+                    android:text="Edit"
+                    android:textColor="#ffffff"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
             <!-- 新闻简单信息展示-->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -36,17 +54,19 @@
                     android:layout_height="18dp">
                     <!-- 新闻作者-->
                     <TextView
+                        android:id="@+id/author"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:text="Author"
+                        android:text="Anonymous Author"
                         android:textSize="16sp" />
                     <!-- 新闻时间-->
                     <TextView
+                        android:id="@+id/creationtime"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
                         android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
                         android:text="13:00"
                         android:textSize="12sp" />
                 </RelativeLayout>
@@ -58,6 +78,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="This is a test post content!"
@@ -72,13 +93,13 @@
         <!-- 第二部分，评论区-->
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="45dp"
-            android:layout_marginTop="20dp">
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="45dp">
             <!-- 评论区主内容区域-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="5dp"
@@ -121,12 +142,12 @@
         android:id="@+id/comment_vg_lyt"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
         android:background="@drawable/solid_line"
         android:orientation="horizontal"
         android:paddingLeft="20dp"
-        android:paddingRight="20dp"
         android:paddingTop="5dp"
+        android:paddingRight="20dp"
         android:visibility="visible">
 
         <!--评论框-->
@@ -152,30 +173,46 @@
         android:id="@+id/edit_vg_lyt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#77030303"
         android:layout_gravity="top"
+        android:background="#77030303"
         android:orientation="vertical"
-        android:visibility="gone">
+        android:visibility="invisible">
+
         <LinearLayout
             android:id="@+id/ll_comment_test"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#F1F1F1"
             android:orientation="vertical"
-            android:paddingBottom="20dp"
             android:paddingLeft="10dp"
+            android:paddingTop="40dp"
             android:paddingRight="10dp"
-            android:paddingTop="40dp">
+            android:paddingBottom="20dp">
             <!-- 输入框 -->
+            <TextView
+                android:id="@+id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_bg"
+                android:gravity="left"
+                android:hint="Title"
+                android:visibility="gone"
+                android:minHeight="20dp" />
             <EditText
                 android:id="@+id/edit_comment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginTop="5dp"
+                android:hint="Content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/edittext_bg"
                 android:gravity="left"
                 android:inputType="textMultiLine"
@@ -187,8 +224,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="0dp">
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -212,7 +249,7 @@
                         android:layout_height="wrap_content"
                         android:text="words"
                         android:textColor="#848484"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp" />
                 </LinearLayout>
 
 
@@ -235,15 +272,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="5dp">
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp">
 
                 <Button
                     android:id="@+id/but_comment_cancel"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_alignParentLeft="true"
-                    android:background="@drawable/button_comment"
+                    android:background="@drawable/translucent_button"
                     android:text="Cancel"
                     android:textColor="#ffffff" />
 
@@ -252,11 +289,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_alignParentRight="true"
-                    android:background="@drawable/button_comment"
-                    android:text="Post"
+                    android:background="@drawable/translucent_button"
+                    android:text="Reply"
                     android:textColor="#ffffff" />
             </RelativeLayout>
 
         </LinearLayout>
     </cs.hku.hkutreehole.ui.dashboard.NoTouchLinearLayout>
-</FrameLayout>
+    <Button
+        android:id="@+id/hides"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#19000000"
+        android:visibility="invisible"></Button>
+
+
+</RelativeLayout>

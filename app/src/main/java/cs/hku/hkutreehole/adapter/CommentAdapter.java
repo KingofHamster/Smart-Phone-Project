@@ -1,6 +1,8 @@
 package cs.hku.hkutreehole.adapter;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Handler;
 import android.view.LayoutInflater;
@@ -30,6 +32,7 @@ public class CommentAdapter extends BaseAdapter {
     private LayoutInflater inflater;
     private ViewHolder mholder = null;
     private Map<Integer, Boolean> isVisible;
+    private String user = "";
 
     private android.view.animation.Animation animation;//动画效果的
 
@@ -102,12 +105,11 @@ public class CommentAdapter extends BaseAdapter {
         mholder.commentNickname.setText(bean.getCommentNickname());
         mholder.commentItemTime.setText(bean.getCommentTime());
         mholder.commentItemContent.setText(bean.getCommentContent());
-        if (isVisible.get(list.get(position).getId())) {
-            mholder.mPraiseText.setTextColor(Color.rgb(255, 0, 0));
-        } else {
-            mholder.mPraiseText.setTextColor(Color.rgb(0, 0, 0));
-        }
-        if(list.get(position).getId()==4){
+
+//        Intent intent = ((Activity) context).getIntent();
+//        user = intent.getStringExtra("EmailAddress");
+
+        if(bean.getSame()){
             mholder.mDelect.setVisibility(View.VISIBLE);
             mholder.replyBut.setVisibility(View.GONE);
         }else {
