@@ -57,14 +57,14 @@ LI Jingqi
 - ...
 
 ## Complile setting
--SDK Manager/SDK Platfroms:
-  -Android API 32
-  -Android 12.0 (S)
--Emulator device:
-  -Hardware: Pixel2
-  -System message: Q
+- SDK Manager/SDK Platfroms:
+  - Android API 32
+  - Android 12.0 (S)
+- Emulator device:
+  - Hardware: Pixel2
+  - System message: Q
 
--compileSdkVersion = 31
--buildToolsVersion = "30.0.2"
--minSdkVersion = 19
--targetSdkVersion = 31
+- compileSdkVersion = 31
+- buildToolsVersion = "30.0.2"
+- minSdkVersion = 19
+- targetSdkVersion = 31
